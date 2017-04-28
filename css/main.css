@@ -94,8 +94,165 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
+/*
+************* ESTILOS GENERALES DE LA PÁGINA******************
+*/
+/**
+Los selectores CSS: clase: .nombre_clase html tag: tag id: #nombreid
+*/
+html{
+    font-size: 16px;
+    color: black;
+}
+h1,h2,h3,h4,h5,h6,ol,ul{
+    margin: 0;
+    padding: 0;
+}
+h1,h2{
+    color:#2e6da4;
+}
+h1{
+    text-align: center;
+    font-size: 180%;
+    font-weight: bold;/* BOLDER*/
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+button {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.lft{
+    float: left;
+}
+.clb{
+    clear: both;
+}
+p{
+    text-align: justify;
+}
+table{
+    width: 100%;
+    border-width: 5px;
+    border-style: groove;
+    border-color: bisque;
+}
+table caption {
+    visibility: hidden;
+    /*display:none;*/
+}
+table:hover caption{
+    visibility: visible;
+    /*display:block;*/
+}
+table th,table td{
+    border-width: 1px;
+    border-style:solid;
+    border-color: black;
+}
+table tfoot tr,table thead tr{
+    border-width: 2px;
+    border-style:solid;
+    border-color: black;
+}
+table tfoot td{
+    border: none;
+}
+/**** MAQUETACIÓN DE LAYOUT*******/
+nav{
+    position: fixed;
+    top: 0;
+    height: 40px;
+    z-index: 8000;
+    width: 100%;
+    background: #397230; /* Old browsers */
+    background: -moz-linear-gradient(top, #397230 0%, #53b701 34%, #78cc84 70%, #4ab251 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #397230 0%,#53b701 34%,#78cc84 70%,#4ab251 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #397230 0%,#53b701 34%,#78cc84 70%,#4ab251 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#397230', endColorstr='#4ab251',GradientType=0 ); /* IE6-9 */
+}
+#wrapper{
+    position: relative;
+    top: 40px;
+}
+/*** maquetacion de menu ****/
+nav ul{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#397230+0,53b701+34,78cc84+70,4ab251+100 */
+    margin: 0 auto;
+    width: 800px;
+}
+nav ul li{/*al li que esta dentro de un ul que esta dentro del nav   */
+    height: 30px;
+    float: left;/** flotan */
+    width: 150px;/*un ancho a cada uno */
+    text-align: center;/* que el texto este centrado en su "caja"*/
+    list-style: none;/* le quitamos el disc de la lista*/
+    /* border-color: white;
+     border-style: solid;
+     border-width: 1px;*/
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white; /* lo de arriba del tiron*/
+    background-color: darkseagreen; /* color de fondo*/
+    transition:  background-color 2s;/* para que el efecto de cambio sea de 2 segundos */
+}
+nav ul li:hover{/*psedo selector que activa cuando el raton por encima */
+    background-color: aquamarine;
+    /*   font-size: 22px;*/
+}
+/*** MAQUETACION SECCIONES *****/
+section{
+    padding: 50px; /* padding-left: 50px; padding-right:50px....*/
+}
+section:nth-child(odd){
+    background-color: gainsboro;
+}
+section:nth-child(even){
+    background-color: #b3d4fc;
+}
+#ejer1 article{
+    float: left;
+    box-sizing: border-box;/* a la hora el ancho disponible me reste el padding y el borde*/
+    width: calc(100%/3);/* le doy el ancho*/
+    padding-left: 20px;/*separación entre bloques*/
+}
+#ejer1 article:first-child {
+    padding-left: 0;
+}
+#ejer1 article > div{
+    float: left;
+    width: 75%;
+    min-height: 200px;
+}
+#ejer1 article > div:last-child{/*  */
+    width: 25%;
+    padding-left: 10px;
+    font-size: 90%;
+    box-sizing: border-box;
+}
+#ejer1 article video{
+    width: 100%;
+}
+#ejer1 article > div button{
+    height: 35px;
+}
+#ejer1 article > div div{
+    height: calc(200px - 35px);
+}
+button{
+    border-radius: 5px;
+}
+main section:last-child{
+    display: flex;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* */
 
 
 
@@ -196,9 +353,9 @@ textarea {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
