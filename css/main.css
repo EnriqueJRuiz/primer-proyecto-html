@@ -263,6 +263,11 @@ main section:last-child article{
     flex-wrap: wrap;
 }
 
+footer{
+    display: flex;
+    align-content: flex-end;
+    background-color: #397230;
+}
 /* */
 
 

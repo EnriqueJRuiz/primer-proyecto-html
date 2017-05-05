@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ejercicio-Flex</title>
+    <meta name="description" content="Este es proyecto es el primer proyecto con HTML5 básico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style-flex.css">
+
+</head>
+<body>
+<nav>
+    <ul class=" ">
+        <li><a href="#listas_ordenadas">Listas ordenadas</a></li>
+        <li><a href="#tabla">Tablas</a></li>
+        <li><a href="#section_multimedia">Multimedia</a></li>
+        <li><a href="#ejer1">Primer Ejercicio</a></li>
+    </ul>
+</nav>
+<div id="wrapper">
+    <header class="">
+        <article>
+        <h2>Marcas:</h2>
+
+            <ul class="marcas">
+                <li>
+                    <a href="">
+                        <img src="img/1x1.png" class="cocacola" alt="CocaCola">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1x1.png" class="chanel" alt="chanel">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1x1.png" class="nike" alt="nike">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1x1.png" class="byo" alt="byo">
+                    </a>
+                </li>
+            </ul>
+
+        </article>
+    </header>
+    <main>
+        <section>
+            <header><h2>Animation</h2></header>
+
+            <div id="slider">
+                <figure>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/austin-fireworks.jpg" alt>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/taj-mahal_copy.jpg" alt>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ibiza.jpg" alt>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ankor-wat.jpg" alt>
+
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/austin-fireworks.jpg" alt>
+
+                </figure>
+            </div>
+
+        </section>
+        <section id="lista-flex" class="">
+            <header><h2>Listado de cartas</h2></header>
+            <div class="flex-wrapper flex-orden ">
+                <article>
+                    <header><h3>Carta 1</h3></header>
+                    <div class="flex-wrapper flex-orden-text">
+                        <div>
+                            <img src="img/cards/black_lotus.jpg" alt="carta">
+                        </div>
+                        <div>
+                            <div>texto de la carta</div>
+                            <button>Más</button>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <header><h3>Carta 2</h3></header>
+                    <div class="flex-wrapper flex-orden-text">
+                        <div>
+                            <img src="img/cards/mox_opal.jpg" alt="carta">
+                        </div>
+                        <div>
+                            <div>texto de la carta</div>
+                            <button>Más</button>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <header><h3>Carta 3</h3></header>
+                    <div class="flex-wrapper flex-orden-text">
+                        <div>
+                            <img src="img/cards/black_lotus.jpg" alt="carta">
+                        </div>
+                        <div>
+                            <div>texto de la carta</div>
+                            <button>Más</button>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <header><h3>Carta 4</h3></header>
+                    <div class="flex-wrapper flex-orden-text">
+                        <div>
+                            <img src="img/cards/mox_opal.jpg" alt="carta">
+                        </div>
+                        <div>
+                            <div>texto de la carta</div>
+                            <button>Más</button>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <header><h3>Carta 5</h3></header>
+                    <div class="flex-wrapper flex-orden-text">
+                        <div>
+                            <img src="img/cards/black_lotus.jpg" alt="carta">
+                        </div>
+                        <div>
+                            <div>texto de la carta</div>
+                            <button>Más</button>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <header><h3>Carta 6</h3></header>
+                    <div class="flex-wrapper flex-orden-text">
+                        <div>
+                            <img src="img/cards/mox_opal.jpg" alt="carta">
+                        </div>
+                        <div>
+                            <div>texto de la carta</div>
+                            <button>Más</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="tableFlex">
+            <header><h2>Tabla responsive con flex</h2></header>
+            <div class="datosAlumnos">
+                <div class="table-row header">
+                    <div class="column index"><input type="checkbox" value="-1" name="codigo"></div>
+                    <div class="wrapper name-surname-dni-date_of_birth">
+                        <div class="wrapper name-surname-dni">
+                            <div class="wrapper name-surname">
+                                <div class="column name">Nombre</div>
+                                <div class="column surname">Apellidos</div>
+                            </div>
+                            <div class="column dni">DNI</div>
+                        </div>
+                        <div class="column date_of_birth">F Nacimiento</div>
+                    </div>
+                    <div class="wrapper email-telephone">
+                        <div class="column email">Email</div>
+                        <div class="column telephone">Telefono</div>
+                    </div>
+
+                    <div class="wrapper address-city-zip-code">
+                        <div class="column address">Direccion</div>
+                        <div class="column city">Poblacion</div>
+                        <div class="column zip-code">Codigo Postal</div>
+                    </div>
+                </div>
+                <div class="table-row">
+
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer>
+    <!-- WAI - ARIA -->
+    <!-- data-toggle="5"-->
+    RRSS: <a><span class="fa fa-facebook-square size_rrss" aria-hidden="true"></span></a>
+    <ul class="rrss">
+        <li ><a href=""><img src="" class="linkedin"></a></li>
+    </ul>
+
+
+</footer>
+</body>
+</html>
